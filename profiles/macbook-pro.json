@@ -1,0 +1,80 @@
+{
+  "name": "macbook-pro",
+  "description": "Apple M3 Max running macOS Sonoma; the logo switches to the Apple art automatically.",
+  "display": {
+    "logo": "auto",
+    "titleColor": "bright_white",
+    "keyColor": "bright_magenta",
+    "separatorColor": "bright_black"
+  },
+  "system": {
+    "user": "ada",
+    "hostname": "macbook-pro",
+
+    "os": "macOS Sonoma 14.5",
+    "osName": "macOS",
+    "osVersion": "Sonoma 14.5",
+    "osCodename": "Sonoma",
+    "osArch": "arm64",
+
+    "host": "Apple MacBook Pro (16-inch, 2023)",
+    "hostVendor": "Apple Inc.",
+    "hostName": "MacBook Pro (16-inch, 2023)",
+    "hostVersion": "M3 Max",
+    "hostSerial": "C02X0000JYVW",
+
+    "kernel": "Darwin 23.5.0 arm64",
+    "kernelName": "Darwin",
+    "kernelVersion": "23.5.0",
+    "kernelArch": "arm64",
+
+    "uptime": "2 days, 7 hours, 14 mins",
+    "uptimeSeconds": 198840,
+
+    "packages": "184 (brew 173, brew-cask 11)",
+    "packagesAll": 184,
+
+    "shell": "zsh 5.9",
+    "shellName": "zsh",
+    "shellVersion": "5.9",
+    "shellPath": "/bin/zsh",
+    "terminal": "iTerm2",
+
+    "cpu": "Apple M3 Max (16) @ 4.05 GHz",
+    "cpuName": "Apple M3 Max",
+    "cpuVendor": "Apple",
+    "cpuCores": 16,
+    "cpuThreads": 16,
+    "cpuFrequencyMhz": 4050,
+    "cpuMarch": "aarch64",
+
+    "gpu": ["Apple M3 Max (40-core GPU) [Integrated]"],
+
+    "memoryTotal": 38654705664,
+    "memoryUsed": 16240336896,
+
+    "disks": [
+      "Macintosh HD (/) 412.10 GiB / 926.35 GiB (44%)",
+      "Time Machine (External) 820.44 GiB / 1.82 TiB (44%)"
+    ],
+
+    "localIp": "10.0.1.42 (en0)",
+    "macAddress": "A4:83:E7:1B:9C:22",
+
+    "battery": "78% [Discharging]",
+    "displays": ["3456x2234 @ 120 Hz (Liquid Retina XDR)"],
+
+    "locale": "en_US.UTF-8",
+    "theme": "Aqua",
+    "wmTheme": "Aqua (System: Dark, Apps: Dark)",
+    "font": "SF Pro (13pt)",
+    "cursor": "macOS (24px)",
+    "icons": "Macintosh HD, Time Machine",
+
+    "custom": [
+      { "label": "Chip", "value": "Apple M3 Max — 16-core CPU, 40-core GPU" },
+      { "label": "Model", "value": "{hostName} / {kernelArch}" },
+      { "label": "Metal", "value": "Metal 3" }
+    ]
+  }
+}

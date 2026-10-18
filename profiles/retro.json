@@ -1,0 +1,97 @@
+{
+  "name": "retro",
+  "description": "Gateway 2000 Pentium II running Windows 98 SE, green phosphor terminal.",
+  "display": {
+    "logo": "windows",
+    "titleColor": "bright_green",
+    "keyColor": "bright_green",
+    "valueColor": "green",
+    "separatorColor": "green",
+    "labels": { "os": "System" },
+    "fields": [
+      "title",
+      "separator",
+      "os",
+      "host",
+      "kernel",
+      "uptime",
+      "shell",
+      "terminal",
+      "cpu",
+      "gpu",
+      "memory",
+      "disk",
+      "display",
+      "font",
+      "cursor",
+      "custom"
+    ]
+  },
+  "system": {
+    "user": "gateway",
+    "hostname": "P5-166",
+
+    "os": "Windows 98 Second Edition",
+    "osName": "Windows 98",
+    "osVersion": "Second Edition",
+    "osCodename": "Memphis",
+    "osArch": "x86",
+
+    "host": "Gateway 2000 P5-166",
+    "hostVendor": "Gateway 2000",
+    "hostName": "P5-166",
+    "hostVersion": "Desktop",
+    "hostSerial": "GW-166-9812",
+
+    "kernel": "WIN32 4.10.2222 x86",
+    "kernelName": "WIN32",
+    "kernelVersion": "4.10.2222",
+    "kernelArch": "x86",
+
+    "uptime": "3 hours, 42 mins",
+    "uptimeSeconds": 13320,
+
+    "packages": "12",
+    "packagesAll": 12,
+
+    "shell": "COMMAND.COM 4.10.2222",
+    "shellName": "COMMAND.COM",
+    "shellVersion": "4.10.2222",
+    "terminal": "MS-DOS Prompt",
+
+    "cpu": "Intel Pentium II @ 233 MHz",
+    "cpuName": "Intel Pentium II",
+    "cpuVendor": "GenuineIntel",
+    "cpuCores": 1,
+    "cpuThreads": 1,
+    "cpuFrequencyMhz": 233,
+    "cpuMarch": "i686",
+
+    "gpu": ["3dfx Voodoo2 (12.00 MiB) [Discrete]"],
+
+    "memory": "24.0 MiB / 64.0 MiB (38%)",
+    "memoryTotal": 67108864,
+    "memoryUsed": 25480397,
+
+    "disks": ["Local Disk (C:) 1.20 GiB / 2.00 GiB (60%)"],
+
+    "localIp": "192.168.0.12 (Dial-up)",
+    "macAddress": null,
+
+    "battery": null,
+    "displays": ["800x600 @ 60 Hz (CRT)"],
+
+    "locale": "en_US.CP1252",
+    "theme": "Windows Classic",
+    "wmTheme": "Windows Classic (System: Light, Apps: Light)",
+    "font": "MS Sans Serif (8pt)",
+    "cursor": "Windows 98 (16px)",
+    "icons": "My Computer, Network Neighborhood, Recycle Bin",
+
+    "custom": [
+      { "label": "Sound", "value": "Sound Blaster AWE64" },
+      { "label": "Modem", "value": "US Robotics 56k Sportster" },
+      { "label": "Machine", "value": "{hostVendor} {hostName}, {memoryTotal} bytes RAM" }
+    ]
+  }
+}

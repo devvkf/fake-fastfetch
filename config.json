@@ -1,0 +1,92 @@
+{
+  "$schema": "./schema/config.schema.json",
+  "defaultProfile": null,
+
+  "display": {
+    "color": true,
+    "showLogo": true,
+    "logo": "auto",
+    "logoArt": null,
+    "logoColors": null,
+    "logoGap": 2,
+    "titleColor": "bright_cyan",
+    "keyColor": "bright_cyan",
+    "valueColor": null,
+    "separatorColor": "bright_black",
+    "fields": null,
+    "hide": [],
+    "labels": {},
+    "alignValues": true
+  },
+
+  "system": {
+    "user": null,
+    "hostname": null,
+
+    "os": null,
+    "osName": null,
+    "osVersion": null,
+    "osCodename": null,
+    "osArch": null,
+
+    "host": null,
+    "hostVendor": null,
+    "hostName": null,
+    "hostVersion": null,
+    "hostSerial": null,
+
+    "kernel": null,
+    "kernelName": null,
+    "kernelVersion": null,
+    "kernelArch": null,
+
+    "uptime": null,
+    "uptimeSeconds": null,
+
+    "packages": null,
+    "packagesAll": null,
+    "packagesScoop": null,
+    "packagesChoco": null,
+    "packagesScoopGlobal": null,
+
+    "shell": null,
+    "shellName": null,
+    "shellVersion": null,
+    "shellPath": null,
+    "terminal": null,
+
+    "cpu": null,
+    "cpuName": null,
+    "cpuVendor": null,
+    "cpuCores": null,
+    "cpuThreads": null,
+    "cpuFrequencyMhz": null,
+    "cpuMarch": null,
+
+    "gpu": null,
+
+    "memory": null,
+    "memoryTotal": null,
+    "memoryUsed": null,
+    "swap": null,
+    "swapTotal": null,
+    "swapUsed": null,
+
+    "disks": null,
+
+    "localIp": null,
+    "macAddress": null,
+
+    "battery": null,
+    "displays": null,
+
+    "locale": null,
+    "theme": null,
+    "wmTheme": null,
+    "font": null,
+    "cursor": null,
+    "icons": null,
+
+    "custom": []
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "name": "ubuntu-server",
+  "description": "Headless Ubuntu 24.04 box: no logo, no desktop rows, extra custom rows.",
+  "display": {
+    "showLogo": false,
+    "fields": [
+      "title",
+      "separator",
+      "os",
+      "host",
+      "kernel",
+      "uptime",
+      "packages",
+      "shell",
+      "cpu",
+      "memory",
+      "swap",
+      "disk",
+      "localIp",
+      "custom"
+    ],
+    "labels": { "localIp": "Address" },
+    "keyColor": "bright_yellow"
+  },
+  "system": {
+    "user": "ubuntu",
+    "hostname": "web-01",
+
+    "os": "Ubuntu 24.04.1 LTS (Noble Numbat)",
+    "osName": "Ubuntu",
+    "osVersion": "24.04.1 LTS",
+    "osCodename": "Noble Numbat",
+    "osArch": "x86_64",
+
+    "host": "QEMU Standard PC (Q35 + ICH9, 2009)",
+    "hostVendor": "QEMU",
+    "hostName": "Standard PC (Q35 + ICH9, 2009)",
+    "hostVersion": "pc-q35-8.2",
+
+    "kernel": "Linux 6.8.0-45-generic x86_64",
+    "kernelName": "Linux",
+    "kernelVersion": "6.8.0-45-generic",
+    "kernelArch": "x86_64",
+
+    "uptime": "46 days, 11 hours, 2 mins",
+    "uptimeSeconds": 4017720,
+
+    "packages": "742 (dpkg 718, snap 24)",
+    "packagesAll": 742,
+
+    "shell": "bash 5.2.21",
+    "shellName": "bash",
+    "shellVersion": "5.2.21",
+    "terminal": "SSH",
+
+    "cpu": "AMD EPYC 7763 (4) @ 2.45 GHz",
+    "cpuName": "AMD EPYC 7763 64-Core Processor",
+    "cpuVendor": "AuthenticAMD",
+    "cpuCores": 4,
+    "cpuThreads": 4,
+    "cpuFrequencyMhz": 2450,
+    "cpuMarch": "x86_64-v4",
+
+    "gpu": ["Red Hat QXL controller [Virtual]"],
+
+    "memoryTotal": 8589934592,
+    "memoryUsed": 2362232013,
+    "swapTotal": 2147483648,
+    "swapUsed": 0,
+
+    "disks": ["/ 18.42 GiB / 48.26 GiB (38%)", "/var 2.11 GiB / 96.52 GiB (2%)"],
+
+    "localIp": "10.0.0.14 (ens3)",
+    "macAddress": "52:54:00:9E:31:0C",
+
+    "battery": null,
+    "displays": null,
+
+    "locale": "C.UTF-8",
+    "theme": null,
+    "wmTheme": null,
+    "font": null,
+    "cursor": null,
+    "icons": null,
+
+    "custom": [
+      { "label": "Role", "value": "nginx + PostgreSQL" },
+      { "label": "Kernel", "value": "{kernelVersion} ({kernelArch})" },
+      { "label": "Memory", "value": "{memoryUsed} bytes in use" }
+    ]
+  }
+}

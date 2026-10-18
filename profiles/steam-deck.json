@@ -1,0 +1,76 @@
+{
+  "name": "steam-deck",
+  "description": "Valve Steam Deck running SteamOS 3.6 (Arch-based, Linux logo).",
+  "display": {
+    "logo": "auto",
+    "titleColor": "bright_white",
+    "keyColor": "bright_blue"
+  },
+  "system": {
+    "user": "deck",
+    "hostname": "steamdeck",
+
+    "os": "SteamOS 3.6.19 (Arch Linux)",
+    "osName": "SteamOS",
+    "osVersion": "3.6.19",
+    "osCodename": "holo",
+    "osArch": "x86_64",
+
+    "host": "Valve Jupiter",
+    "hostVendor": "Valve",
+    "hostName": "Jupiter",
+    "hostVersion": "1.0",
+
+    "kernel": "Linux 6.5.0-valve22-1-neptune-65-g9a338ed8aecb x86_64",
+    "kernelName": "Linux",
+    "kernelVersion": "6.5.0-valve22-1-neptune",
+    "kernelArch": "x86_64",
+
+    "uptime": "5 hours, 3 mins",
+    "uptimeSeconds": 18180,
+
+    "packages": "1197 (pacman 1124, flatpak 73)",
+    "packagesAll": 1197,
+
+    "shell": "bash 5.2.26",
+    "shellName": "bash",
+    "shellVersion": "5.2.26",
+    "shellPath": "/usr/bin/bash",
+    "terminal": "Konsole",
+
+    "cpu": "AMD Custom APU 0405 (8) @ 3.50 GHz",
+    "cpuName": "AMD Custom APU 0405",
+    "cpuVendor": "AuthenticAMD",
+    "cpuCores": 8,
+    "cpuThreads": 8,
+    "cpuFrequencyMhz": 3500,
+    "cpuMarch": "x86_64-v3",
+
+    "gpu": ["AMD Radeon 780M (1.00 GiB) [Integrated]"],
+
+    "memoryTotal": 17179869184,
+    "memoryUsed": 7315001344,
+    "swapTotal": 1073741824,
+    "swapUsed": 268435456,
+
+    "disks": ["home (/home) 198.44 GiB / 432.19 GiB (46%)"],
+
+    "localIp": "192.168.1.87 (wlan0)",
+    "macAddress": "94:3B:B1:07:5A:11",
+
+    "battery": "63% [Discharging]",
+    "displays": ["1280x800 @ 60 Hz (LCD)"],
+
+    "locale": "en_US.UTF-8",
+    "theme": "Breeze",
+    "wmTheme": "Breeze (System: Dark, Apps: Dark)",
+    "font": "Noto Sans (10pt)",
+    "cursor": "Breeze (24px)",
+    "icons": "Breeze",
+
+    "custom": [
+      { "label": "SteamOS", "value": "Immutable image, A/B updates" },
+      { "label": "GPU driver", "value": "Mesa RADV 24.1" }
+    ]
+  }
+}

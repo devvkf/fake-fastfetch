@@ -1,0 +1,180 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "sysfetch config",
+  "description": "Base config.json and every file in profiles/ use this shape. Null (or omitted) system values are detected live; anything else is displayed verbatim.",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string" },
+    "name": { "type": "string" },
+    "description": { "type": "string" },
+    "defaultProfile": {
+      "description": "Profile loaded when neither --profile nor SYSFETCH_PROFILE is given.",
+      "type": ["string", "null"]
+    },
+    "display": { "$ref": "#/definitions/display" },
+    "system": { "$ref": "#/definitions/system" }
+  },
+  "additionalProperties": true,
+  "definitions": {
+    "color": {
+      "description": "Colour name (red, bright_cyan, ...), 256-colour index, or #RGB/#RRGGBB. null/'auto' means uncoloured.",
+      "type": ["string", "integer", "null"]
+    },
+    "display": {
+      "type": "object",
+      "properties": {
+        "color": { "type": "boolean" },
+        "showLogo": { "type": "boolean" },
+        "logo": {
+          "description": "Built-in logo name (windows, windows_11, linux, ubuntu, macos) or 'auto' to pick from the OS values. false hides it.",
+          "type": ["string", "boolean", "null"]
+        },
+        "logoArt": {
+          "description": "Replacement art. Use $1..$9 placeholders for logoColors. \\n separates lines.",
+          "type": ["string", "null"]
+        },
+        "logoColors": {
+          "type": ["array", "null"],
+          "items": { "$ref": "#/definitions/color" }
+        },
+        "logoGap": { "type": "integer", "minimum": 0 },
+        "titleColor": { "$ref": "#/definitions/color" },
+        "keyColor": { "$ref": "#/definitions/color" },
+        "valueColor": { "$ref": "#/definitions/color" },
+        "separatorColor": { "$ref": "#/definitions/color" },
+        "fields": {
+          "description": "Rows to show, in order. null means the default set.",
+          "type": ["array", "null"],
+          "items": {
+            "enum": [
+              "title",
+              "separator",
+              "os",
+              "host",
+              "kernel",
+              "uptime",
+              "packages",
+              "shell",
+              "terminal",
+              "cpu",
+              "gpu",
+              "memory",
+              "swap",
+              "disk",
+              "localIp",
+              "battery",
+              "display",
+              "locale",
+              "theme",
+              "wmTheme",
+              "font",
+              "cursor",
+              "icons",
+              "custom"
+            ]
+          }
+        },
+        "hide": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "labels": {
+          "description": "Per-field label overrides, e.g. {\"os\": \"System\"}.",
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+        "alignValues": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    "system": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "user": { "$ref": "#/definitions/value" },
+        "hostname": { "$ref": "#/definitions/value" },
+        "os": { "$ref": "#/definitions/value" },
+        "osName": { "$ref": "#/definitions/value" },
+        "osVersion": { "$ref": "#/definitions/value" },
+        "osCodename": { "$ref": "#/definitions/value" },
+        "osArch": { "$ref": "#/definitions/value" },
+        "host": { "$ref": "#/definitions/value" },
+        "hostVendor": { "$ref": "#/definitions/value" },
+        "hostName": { "$ref": "#/definitions/value" },
+        "hostVersion": { "$ref": "#/definitions/value" },
+        "hostSerial": { "$ref": "#/definitions/value" },
+        "kernel": { "$ref": "#/definitions/value" },
+        "kernelName": { "$ref": "#/definitions/value" },
+        "kernelVersion": { "$ref": "#/definitions/value" },
+        "kernelArch": { "$ref": "#/definitions/value" },
+        "uptime": { "$ref": "#/definitions/value" },
+        "uptimeSeconds": { "$ref": "#/definitions/value" },
+        "packages": { "$ref": "#/definitions/value" },
+        "packagesAll": { "$ref": "#/definitions/value" },
+        "packagesScoop": { "$ref": "#/definitions/value" },
+        "packagesChoco": { "$ref": "#/definitions/value" },
+        "packagesScoopGlobal": { "$ref": "#/definitions/value" },
+        "shell": { "$ref": "#/definitions/value" },
+        "shellName": { "$ref": "#/definitions/value" },
+        "shellVersion": { "$ref": "#/definitions/value" },
+        "shellPath": { "$ref": "#/definitions/value" },
+        "terminal": { "$ref": "#/definitions/value" },
+        "cpu": { "$ref": "#/definitions/value" },
+        "cpuName": { "$ref": "#/definitions/value" },
+        "cpuVendor": { "$ref": "#/definitions/value" },
+        "cpuCores": { "$ref": "#/definitions/value" },
+        "cpuThreads": { "$ref": "#/definitions/value" },
+        "cpuFrequencyMhz": { "$ref": "#/definitions/value" },
+        "cpuMarch": { "$ref": "#/definitions/value" },
+        "gpu": { "$ref": "#/definitions/value" },
+        "memory": { "$ref": "#/definitions/value" },
+        "memoryTotal": { "$ref": "#/definitions/bytes" },
+        "memoryUsed": { "$ref": "#/definitions/bytes" },
+        "swap": { "$ref": "#/definitions/value" },
+        "swapTotal": { "$ref": "#/definitions/bytes" },
+        "swapUsed": { "$ref": "#/definitions/bytes" },
+        "disks": { "$ref": "#/definitions/value" },
+        "localIp": { "$ref": "#/definitions/value" },
+        "macAddress": { "$ref": "#/definitions/value" },
+        "battery": { "$ref": "#/definitions/value" },
+        "displays": { "$ref": "#/definitions/value" },
+        "locale": { "$ref": "#/definitions/value" },
+        "theme": { "$ref": "#/definitions/value" },
+        "wmTheme": { "$ref": "#/definitions/value" },
+        "font": { "$ref": "#/definitions/value" },
+        "cursor": { "$ref": "#/definitions/value" },
+        "icons": { "$ref": "#/definitions/value" },
+        "custom": {
+          "type": ["array", "null"],
+          "items": {
+            "oneOf": [
+              {
+                "type": "object",
+                "required": ["label", "value"],
+                "properties": {
+                  "label": { "type": "string" },
+                  "value": {}
+                }
+              },
+              {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": [{ "type": "string" }, {}]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "value": {
+      "description": "Text, number, or list of lines. null means 'detect this live'.",
+      "type": ["string", "number", "boolean", "array", "null"],
+      "items": { "type": ["string", "number"] }
+    },
+    "bytes": {
+      "description": "Byte count, or a string shown verbatim. Used to build the combined memory/swap/disk rows.",
+      "type": ["integer", "string", "null"]
+    }
+  }
+}

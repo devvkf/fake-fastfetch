@@ -1,0 +1,85 @@
+{
+  "name": "workstation",
+  "description": "Threadripper PRO 5995WX + RTX 4090 desktop. No battery row (null = hide).",
+  "display": {
+    "logo": "windows_11",
+    "keyColor": "bright_green",
+    "titleColor": "bright_green"
+  },
+  "system": {
+    "user": "root",
+    "hostname": "forge",
+
+    "os": "Windows 11 Pro for Workstations (23H2)",
+    "osName": "Windows 11 Pro for Workstations",
+    "osVersion": "23H2",
+    "osCodename": "23H2",
+    "osArch": "x86_64",
+
+    "host": "ASUS Pro WS WRX80E-SAGE SE WIFI",
+    "hostVendor": "ASUS",
+    "hostName": "Pro WS WRX80E-SAGE SE WIFI",
+    "hostVersion": "Rev 1.xx",
+    "hostSerial": "WS-2024-0001",
+
+    "kernel": "WIN32_NT 10.0.22631.4317 x86_64",
+    "kernelName": "WIN32_NT",
+    "kernelVersion": "10.0.22631.4317",
+    "kernelArch": "x86_64",
+
+    "uptime": "21 days, 4 hours, 55 mins",
+    "uptimeSeconds": 1848900,
+
+    "packages": "312 (scoop 268, choco 44)",
+    "packagesAll": 312,
+    "packagesScoop": 268,
+    "packagesChoco": 44,
+
+    "shell": "PowerShell 7.4.6",
+    "shellName": "PowerShell",
+    "shellVersion": "7.4.6",
+    "terminal": "Windows Terminal",
+
+    "cpu": "AMD Ryzen Threadripper PRO 5995WX (64) @ 4.50 GHz",
+    "cpuName": "AMD Ryzen Threadripper PRO 5995WX 64-Cores",
+    "cpuVendor": "AuthenticAMD",
+    "cpuCores": 64,
+    "cpuThreads": 128,
+    "cpuFrequencyMhz": 4500,
+    "cpuMarch": "x86_64-v4",
+
+    "gpu": [
+      "NVIDIA GeForce RTX 4090 (24.00 GiB) [Discrete]",
+      "NVIDIA GeForce RTX 4090 (24.00 GiB) [Discrete]"
+    ],
+
+    "memoryTotal": 274877906944,
+    "memoryUsed": 80264351744,
+    "swapTotal": 34359738368,
+    "swapUsed": 4294967296,
+
+    "disks": [
+      "System (C:) 1.24 TiB / 3.64 TiB (34%)",
+      "Scratch (D:) 3.05 TiB / 7.28 TiB (42%)",
+      "Archive (E:) 2.18 TiB / 14.55 TiB (15%)"
+    ],
+
+    "localIp": "10.20.0.5 (Ethernet 2)",
+    "macAddress": "2C:F0:5D:88:1A:4B",
+
+    "battery": null,
+    "displays": ["3840x2160 @ 144 Hz (LG UltraGear 32GQ950)"],
+
+    "locale": "en_US.UTF-8",
+    "theme": "Fluent",
+    "wmTheme": "Dark - Green (System: Dark, Apps: Dark)",
+    "font": "Segoe UI Variable (12pt)",
+    "cursor": "Windows Aero (32px)",
+    "icons": "This PC, Recycle Bin",
+
+    "custom": [
+      { "label": "Cooling", "value": "Custom loop, 2x 360 mm radiators" },
+      { "label": "Power draw", "value": "~640 W under load" }
+    ]
+  }
+}
